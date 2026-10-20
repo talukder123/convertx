@@ -8,7 +8,7 @@ const Navbar = () => {
         <header className="border-b">
   <nav className="container mx-auto grid grid-cols-3 items-center px-4 py-3">
     {/* Left: logo */}
-    <Link href="#" className="justify-self-start">
+    <Link href="/" className="justify-self-start">
       <Image
         src={logo}
         alt="Company logo"

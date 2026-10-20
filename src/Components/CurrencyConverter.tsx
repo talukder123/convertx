@@ -1,5 +1,8 @@
+
+
 import { IExchangeRate } from '@/types/type';
 import React from 'react';
+import ConverterForm from './ConverterForm';
 
 const getCurrenct = async (): Promise<IExchangeRate> => {
     const res = await fetch("https://open.er-api.com/v6/latest/USD");
@@ -12,10 +15,7 @@ const CurrencyConverter = async () => {
     const data = await getCurrenct();
     return (
         <div>
-            DATA FETCHED
-
-            <p>1 USD = {data.rates.EUR} EUR</p>
-            <p>1 USD = {data.rates.BDT} BDT</p>
+            <ConverterForm data={data}></ConverterForm>
         </div>
     );
 };

@@ -7,7 +7,6 @@ export default function Home() {
     <div>
       <BannerSection></BannerSection>
       <CurrencyConverter></CurrencyConverter>
-      HOME_PAGE
     </div>
   );
 }
