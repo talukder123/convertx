@@ -19,7 +19,7 @@ const Footer = () => {
     <div className="h-px w-16 bg-gradient-to-r from-transparent via-slate-500 to-transparent" />
 
     <p className="text-xs text-slate-500">
-      © {new Date().getFullYear()} CurrencyConverter. All rights reserved.
+      © {new Date().getFullYear()} CurrencyConverter. All rights reserved. Developed by Talukder
     </p>
   </div>
 </footer>

@@ -19,7 +19,7 @@ const CurrencySelect = ({ id, value, options, onChange }: Props) => {
         [options, query]
     );
 
-    // close when clicking outside
+  
     useEffect(() => {
         const handler = (e: MouseEvent) => {
             if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
