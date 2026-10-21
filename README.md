@@ -4,7 +4,7 @@ ConvertX is a simple and responsive currency converter built with Next.js and Ty
 
 ## 🌐 Live Demo
 
-**[Visit ConvertX](YOUR_LIVE_DEPLOYMENT_URL)**
+**[Visit ConvertX](https://convertx-two.vercel.app/)**
 
 ## ✨ Features
 
@@ -43,7 +43,7 @@ This endpoint provides exchange rates relative to the US Dollar (USD). These rat
 
 You can use ConvertX directly through the live website without installing anything.
 
-1. Visit the [ConvertX Live Demo](YOUR_LIVE_DEPLOYMENT_URL).
+1. Visit the [ConvertX Live Demo](https://convertx-two.vercel.app/).
 2. Select your source currency.
 3. Select your target currency.
 4. Enter the amount you want to convert.
@@ -89,8 +89,3 @@ convertx/
 
 - GitHub: [@talukder123](https://github.com/talukder123)
 
-## 📄 License
-
-This project is available for educational and personal use. Add a `LICENSE` file to the repository if you intend to distribute it under a specific open-source license.
-
----
