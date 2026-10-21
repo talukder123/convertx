@@ -2,6 +2,7 @@
 
 import { IExchangeRate } from '@/types/type';
 import React, { useState } from 'react';
+import CurrencySelect from './CurrencySelect';
 
 interface IdataType {
     data: IExchangeRate;
@@ -80,16 +81,7 @@ const ConverterForm = ({ data }: IdataType) => {
                     <label htmlFor="from" className="text-xs font-semibold uppercase tracking-wider text-slate-400">
                         From
                     </label>
-                    <select
-                        id="from"
-                        value={from}
-                        onChange={(e) => setFrom(e.target.value)}
-                        className="mt-2 w-full cursor-pointer rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 font-semibold text-slate-800 outline-none transition focus:border-indigo-400 focus:bg-white focus:ring-4 focus:ring-indigo-100"
-                    >
-                        {currencies.map((c) => (
-                            <option key={c} value={c}>{c}</option>
-                        ))}
-                    </select>
+                    <CurrencySelect id="from" value={from} options={currencies} onChange={setFrom} />
                 </div>
 
                 <button
@@ -105,16 +97,7 @@ const ConverterForm = ({ data }: IdataType) => {
                     <label htmlFor="to" className="text-xs font-semibold uppercase tracking-wider text-slate-400">
                         To
                     </label>
-                    <select
-                        id="to"
-                        value={to}
-                        onChange={(e) => setTo(e.target.value)}
-                        className="mt-2 w-full cursor-pointer rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 font-semibold text-slate-800 outline-none transition focus:border-indigo-400 focus:bg-white focus:ring-4 focus:ring-indigo-100"
-                    >
-                        {currencies.map((c) => (
-                            <option key={c} value={c}>{c}</option>
-                        ))}
-                    </select>
+                    <CurrencySelect id="to" value={to} options={currencies} onChange={setTo} />
                 </div>
             </div>
 
