@@ -14,7 +14,7 @@ const CurrencyConverter = async () => {
 
     const data = await getCurrenct();
     return (
-        <div>
+        <div className='py-10'>
             <ConverterForm data={data}></ConverterForm>
         </div>
     );
